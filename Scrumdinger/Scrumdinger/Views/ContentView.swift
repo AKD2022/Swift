@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  Scrumdinger
-//
-//  Created by AK D on 6/9/23.
-//
-
 import SwiftUI
 
 struct MeetingView: View {
@@ -25,17 +18,17 @@ struct MeetingView: View {
                 }
             }
             .accessibilityElement(children: .ignore)
-            .accessibilityLabel("Time Remaining")
-            .accessibilityValue("10 mintutes")
+            .accessibilityLabel("Time remaining")
+            .accessibilityValue("10 minutes")
             Circle()
                 .strokeBorder(lineWidth: 24)
             HStack {
-                Text("Speacker 1 of 3")
+                Text("Speaker 1 of 3")
                 Spacer()
-                Button( action:{}) {
+                Button(action: {}) {
                     Image(systemName: "forward.fill")
                 }
-                .accessibilityLabel("Next Speaker")
+                .accessibilityLabel("Next speaker")
             }
         }
         .padding()
